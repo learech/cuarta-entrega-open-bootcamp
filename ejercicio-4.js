@@ -9,19 +9,19 @@ console.log(estudianteMayus);
 let estudianteMinus = estudiante.toLowerCase();
 console.log(estudianteMinus);
 
-let numeroDeLetras = (estudiante).length;
+let numeroDeLetras = estudiante.length;
 console.log(numeroDeLetras);
 
-let primeraLetraNombre = nombre.charAt(0);
+let primeraLetraNombre = nombre.substring(0,1);
 console.log(primeraLetraNombre);
 
-let ultimaLetraApellido = apellido.charAt(3);
+let ultimaLetraApellido = apellido.substring(apellido.length - 1, apellido.length);
 console.log(ultimaLetraApellido);
 
-let estudianteSinEspacios = "   Leandro Rech";
-console.log(estudianteSinEspacios.trimStart().length);
+let estudianteSinEspacios = estudiante.replace(/ /g, "");
+console.log(estudianteSinEspacios);
 
-let contiene = nombre.includes("estudiante");
+let contiene = estudiante.includes(nombre);
 console.log(contiene);
 
 
